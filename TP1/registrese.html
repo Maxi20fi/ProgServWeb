@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formlario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="" id="logo">
+    </header>
+
+    <nav class="contMenu">
+        <input type="checkbox" name="" id="btn-menu">
+        <label for="btn-menu"><img src="img/boton.png" alt=""></label>
+
+        <div class="menu">
+            <ul>
+                <li id="inicio"><a href="inicio.html">INICIO</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="#">REGISTRESE</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="content">
+            <div class="infoForm">
+                <h2>Envie su informacion</h2>
+                <p>Este formulario tiene por objetivo recopilar informacion acerca de los postulantes a las carreras</p>
+            </div>
+            <div id="formulario">
+                <h2 class="tituloForm">Registrese</h2>
+                <form action="" method="post">
+                    <div class="entrada">
+                        <label for="apellido">Apellido</label>
+                        <input class="campo" type="text" id="apellido" required>
+                    </div>
+                    <div class="entrada">
+                        <label for="nombre">Nombre</label>
+                        <input class="campo" type="text" id="nombre" required>
+                    </div>
+                    <div class="entrada">
+                        <label for="celular">Celular</label>
+                        <input class="campo" type="number" id="celular" required>
+                    </div>
+                    <div class="entrada">
+                        <label for="compania">Compania</label>
+                        <select name="compania" id="compania" required>
+                            <option value="">Personal</option>
+                            <option value="">Claro</option>
+                            <option value="">Movistar</option>
+                            <option value="">Tuenti</option>
+                        </select>
+                    </div>
+    
+                    <div class="entrada">
+                        <p>Género</p>
+                        <br>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="masculino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="femenino">
+                    </div>
+    
+                    <div class="entrada">
+                        <label>Fecha de nacimiento</label>
+                        <input id="fecha" type="date" required>
+                    </div>
+    
+                    <div class="entrada">
+                        <p>Dispositivo que dispone</p><br>
+                        <label for="pc">PC</label>
+                        <input type="checkbox" name="" id="pc">
+    
+                        <label for="notebook">Notebook</label>
+                        <input type="checkbox" name="" id="notebook">
+    
+                        <label for="cel">Celular</label>
+                        <input type="checkbox" name="" id="cel">
+                    </div>
+    
+    
+                    <div class="entrada">
+                        <button type="submit">Crear cuenta</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+    </section>
+
+    <footer>
+        <div>Copyright © 2014-2021 - Instituto Nuevo Horizonte</div>
+    </footer>
+</body>
+
+</html>
