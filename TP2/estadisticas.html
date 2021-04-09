@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>COVID-19</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <style>
+     img{
+     height: 20px;
+     width: 30px;
+   }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <span class="navbar-brand text-white" href="#">Movie!</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" href="peliculas.html">Peliculas</a>
+          <a class="nav-link text-white" href="divisas.html">Cotización de divisas</a>
+          <a class="nav-link text-white" href="traductor.html">Traductor</a>
+          <a class="nav-link text-white" href="#">Estadísticas covid</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        
+        <form class="bg-white p-3">
+          <fieldset>
+            <legend>Estadisticas COVID</legend>
+            <div class="mb-3">
+              <select class="form-select" required>
+                <option value="">Seleccione una opcion</option>
+                <option value="t">Todo el mundo</option>
+                <option value="eeuu">Estados Unidos</option>
+                <option value="esp">España</option>
+                <option value="fr">Francia</option>
+              </select>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="op1" checked>
+              <label class="form-check-label" for="op1">Casos confirmados</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="op2">
+              <label class="form-check-label" for="op2">Casos curados</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="op3">
+              <label class="form-check-label" for="op3">Casos fallecidos</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Consultar</button>
+          </fieldset>
+        </form>
+
+        <table class="table table-striped mt-3 bg-white">
+          <thead>
+            <tr>
+              <th scope="col">Ubicacion</th>
+              <th scope="col">Casos confirmados</th>
+              <th scope="col">Casos por 1mill de Personas</th>
+              <th scope="col">Curados</th>
+              <th scope="col">Fallecidos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><i class="fas fa-globe"></i> Todo el mundo</th>
+              <td>1.433.122</td>
+              <td>184.333</td>
+              <td>500.00</td>
+              <td>20.000</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/eeuu.png" alt=""> Estados Unidos</th>
+              <td>500.000</td>
+              <td>12.000</td>
+              <td>30.000</td>
+              <td>50.000</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/españa.jpg" alt=""> España</th>
+              <td>500.000</td>
+              <td>12.000</td>
+              <td>30.000</td>
+              <td>50.000</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/italia.png" alt=""> Italia</th>
+              <td>500.000</td>
+              <td>12.000</td>
+              <td>30.000</td>
+              <td>50.000</td>
+            </tr>
+            
+          </tbody>
+        </table>
+
+
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

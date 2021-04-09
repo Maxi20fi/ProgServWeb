@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Traductor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    
+    
+    <style>
+        img {
+            height: 20px;
+            width: 35px;
+        }
+
+        body {
+            background: #0F2027;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <span class="navbar-brand text-white" href="#">Movie!</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-white" href="peliculas.html">Peliculas</a>
+              <a class="nav-link text-white" href="divisas.html">Cotización de divisas</a>
+              <a class="nav-link text-white" href="#">Traductor</a>
+              <a class="nav-link text-white" href="estadisticas.html">Estadísticas covid</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form action="">
+                    <div class="row row-cols-2" role="group" aria-label="Basic radio toggle button group">
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+                            <input type="radio" class="btn-check" name="idiomaOrigen" id="it" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="it"><img src="img/italia.png"
+                                    alt="">Italiano</label>
+                        </div>
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+
+                            <input type="radio" class="btn-check" name="idiomaOrigen" id="fr" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="fr"><img src="img/francia.png"
+                                    alt="">Frances</label>
+                        </div>
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+                            <input type="radio" class="btn-check" name="idiomaOrigen" id="in" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="in"><img src="img/uk.jpg" alt="">Ingles</label>
+                        </div>
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+                            <input type="radio" class="btn-check" name="idiomaOrigen" id="es" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="es"><img src="img/españa.jpg"
+                                    alt="">Español</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                    <br>
+                    <div class="row row-cols-2" role="group" aria-label="Basic radio toggle button group">
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+                            <input type="radio" class="btn-check" name="traducir" id="it2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="it2"><img src="img/italia.png"
+                                    alt="">Italiano</label>
+                        </div>
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+
+                            <input type="radio" class="btn-check" name="traducir" id="fr2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="fr2"><img src="img/francia.png"
+                                    alt="">Frances</label>
+                        </div>
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+                            <input type="radio" class="btn-check" name="traducir" id="in2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="in2"><img src="img/uk.jpg" alt="">Ingles</label>
+                        </div>
+                        <div class="col-sm-6 col-md-3 row-cols-1">
+
+                            <input type="radio" class="btn-check" name="traducir" id="es2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="es2"><img src="img/españa.jpg"
+                                    alt="">Español</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row-cols-1">
+                        <button type="submit" class="btn btn-primary">TRADUCIR</button>
+                    </div>
+                    <br>
+                </form>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                </div>
+                <div class="row row-cols-3">
+                    <span class="col-sm-4 text-center"><i class="far fa-copy"></i></span>
+                    <span class="col-sm-4 text-center"><i class="far fa-copy"></i></span>
+                    <span class="col-sm-4 text-center"><i class="fas fa-times"></i></span>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Cotización de divisas</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  
+  
+<style>
+    legend{
+        background-color: rgb(8,15,40);
+    }
+   
+   img{
+     height: 20px;
+     width: 30px;
+   }
+</style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <span class="navbar-brand text-white" href="#">Movie!</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" href="peliculas.html">Peliculas</a>
+          <a class="nav-link text-white" href="#">Cotización de divisas</a>
+          <a class="nav-link text-white" href="traductor.html">Traductor</a>
+          <a class="nav-link text-white" href="estadisticas.html">Estadísticas covid</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" id="tabla">
+                <h3 class="col-sm-12 bg-primary text-center text-white">Conversor de divisas</h3>
+                <table class="table bg-white">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"><img src="img/eeuu.png" alt=""><br> USD</th>
+                        <th scope="col"><img src="img/euro.jpg" alt=""><br> EUR</th>
+                        <th scope="col"><img src="img/uk.jpg" alt=""><br> GBP</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><img src="img/eeuu.png" alt=""> USD</th>
+                        <td>100.000.000</td>
+                        <td>100.000.000</td>
+                        <td>100.000.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="img/euro.jpg" alt=""> EUR</th>
+                        <td>100.000.000</td>
+                        <td>100.000.000</td>
+                        <td>100.000.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="img/uk.jpg" alt=""> GBP</th>
+                        <td >100.000.000</td>
+                        <td>100.000.000</td>
+                        <td>100.000.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <br>
+            <div class="col-md-4 bg-primary" >
+                <form>
+                    <fieldset>
+                      <legend class="text-white text-center">Conversor de divisas</legend>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="label" class="form-label">DE</label>
+                        <select class="form-select" id="label" aria-label="Default select example" required>
+                          <option value="">Seleccione una opcion</option>
+                          <option value="1">USD</option>
+                          <option value="2">EUR</option>
+                          <option value="3">GBP</option>
+                        </select>
+                      </div>
+                      <label for="label"  class="form-label">A</label>
+                      <select class="form-select" id="label" aria-label="Default select example" required>
+                        <option value="">Seleccione una opcion</option>
+                        <option value="1">USD</option>
+                        <option value="2">EUR</option>
+                        <option value="3">GBP</option>
+                      </select>
+                      <br>
+                      <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="row-cols-1">
+                        <button type="submit" class="btn btn-warning">Convertir <i class="fas fa-arrow-right" style="float: right; margin-top: 5px;"></i></button>
+                      </div>
+                    </fieldset>
+                    <br>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
